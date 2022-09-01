@@ -62,6 +62,7 @@ const TodoTemplate = () => {
         dispatch(todoDone(id));
     }
     const checkTodoClear = () => {
+        console.log(doneTodoId)
         dispatch(todoDoneClear());
     }
     useEffect(() => {

@@ -137,7 +137,8 @@ export default function todo(state = initialState, action) {
         case DONE_TODO_CLEAR:
             return {
                 ...state,
-                todo: state.todo.filter(item=> !state.doneTodoId.includes(item.id))
+                todo: state.todo.filter(item=> !state.doneTodoId.includes(item.id)),
+                doneTodoId: []
             }
         default:
             return state
