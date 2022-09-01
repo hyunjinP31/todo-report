@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import TodoTemplate from './components/TodoTemplate';
 
 function App() {
   return (
     <div className="App">
+      <TodoTemplate />
     </div>
   );
 }
